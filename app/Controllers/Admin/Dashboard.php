@@ -32,6 +32,11 @@ class Dashboard extends BaseController
         return view('admin/texteditor');
     }
 
+    public function add()
+    {
+
+    }
+
 }
 
 ?>
