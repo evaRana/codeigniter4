@@ -64,7 +64,7 @@
                         <svg>
                             <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#moondark"></use>
                         </svg></a></li>
-                <li class="custom-dropdown"><a href="javascript:void(0)">
+                <li class="custom-dropdown d-none"><a href="javascript:void(0)">
                         <svg>
                             <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#cart-icon"></use>
                         </svg></a><span class="badge rounded-pill badge-primary">2</span>
@@ -121,7 +121,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="custom-dropdown"><a href="javascript:void(0)">
+                <li class="custom-dropdown d-none"><a href="javascript:void(0)">
                         <svg>
                             <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#notification"></use>
                         </svg></a><span class="badge rounded-pill badge-primary">4</span>
@@ -189,7 +189,7 @@
                         <svg>
                             <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#scanfull"></use>
                         </svg></a></li>
-                <li class="custom-dropdown"><a href="javascript:void(0)">
+                <li class="custom-dropdown d-none"><a href="javascript:void(0)">
                         <svg>
                             <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#bookmark"></use>
                         </svg></a>
