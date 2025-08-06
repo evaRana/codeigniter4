@@ -288,14 +288,14 @@
                             <li class="d-flex">
                                 <svg class="svg-color">
                                     <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#Profile"></use>
-                                </svg><a class="ms-2" href="user-profile.html">Account</a>
+                                </svg><a class="ms-2" href="<?= base_url('admin/userprofile'); ?>">Account</a>
                             </li>
-                            <li class="d-flex">
+                            <li class="d-flex d-none">
                                 <svg class="svg-color">
                                     <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#Message"></use>
                                 </svg><a class="ms-2" href="letter-box.html">Inbox</a>
                             </li>
-                            <li class="d-flex">
+                            <li class="d-flex d-none">
                                 <svg class="svg-color">
                                     <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#Document"></use>
                                 </svg><a class="ms-2" href="to-do.html">Task</a>
@@ -303,7 +303,7 @@
                             <li class="d-flex">
                                 <svg class="svg-color">
                                     <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#Login"></use>
-                                </svg><a class="ms-2" href="login.html">Log Out</a>
+                                </svg><a class="ms-2" href="#">Log Out</a>
                             </li>
                         </ul>
                     </div>
