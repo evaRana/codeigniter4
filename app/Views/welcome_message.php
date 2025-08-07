@@ -161,7 +161,6 @@
                                 <div class="framework-bg"><img src="<?= base_url('assets/'); ?>landing-img/charts.png"
                                         alt=""></div>
                                 <h4>Boost Income</h4>
-
                             </li>
 
                         </ul>
