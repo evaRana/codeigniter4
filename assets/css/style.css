@@ -51899,9 +51899,14 @@ pre {
 
 @media (max-width: 1260px) {
   .landing-page .framework-section .framworks .framework-list li .framework-bg img {
-    width: 38%;
+    width: 20%;
   }
 }
+
+
+/* .landing-page .framework-section .framworks .framework-list li .framework-bg img {
+    width: 38%;
+  } */
 
 .landing-page .framework-section .framworks .framework-list li h4,
 .landing-page .framework-section .framworks .framework-list li .h4 {

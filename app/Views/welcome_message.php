@@ -5,6 +5,11 @@
     .fwheight {
         height: 157px !important;
     }
+
+    .svg-h {
+        width: 100%;
+        height: 31px;
+    }
 </style>
 
 <section class="landing-home" id="home">
@@ -24,13 +29,14 @@
                 <div class="landing_first_section_img">
 
                     <div class="img-set1"><img class="img-fluid"
-                            src="<?= base_url('assets/'); ?>landing-img/screen2.png" alt=""></div>
+                            src="<?= base_url('assets/'); ?>landing-img/redm.jpg" alt=""></div>
                     <div class="img-set2"><img class="img-fluid"
-                            src="<?= base_url('assets/'); ?>landing-img/screen3.png" alt=""></div>
+                            src="<?= base_url('assets/'); ?>landing-img/greenm.jpg" alt=""></div>
                     <div class="img-set3"><img class="img-fluid"
-                            src="<?= base_url('assets/'); ?>landing-img/screen1.png" alt=""></div>
+                            src="<?= base_url('assets/'); ?>landing-img/new22.jpg" alt=""></div>
                 </div>
-            </div>
+            <!-- </div>dash22 -->
+            <!-- landing-img/dash12.png -->
 
             <div class="bottom-img-1"></div>
 
@@ -201,7 +207,7 @@
                 style="visibility: visible;-webkit-animation-duration: 0.1s; -moz-animation-duration: 0.1s; animation-duration: 0.1s;">
                 <div class="feature-box common-card bg-feature">
                     <div class="feature-icon bg-white">
-                        <div><img src="<?= base_url('assets/'); ?>landing-img/11.svg" alt="feature-icon"></div>
+                        <div><img class="svg-h" src="<?= base_url('assets/'); ?>landing-img/21.svg" alt="feature-icon"></div>
                     </div>
                     <h5>100% Decentralized Smart Contract</h5>
                     <p class="mb-0">The system runs on blockchain code with no manual control or manipulation.</p>
@@ -211,7 +217,7 @@
                 style="visibility: visible;-webkit-animation-duration: 0.0.2s; -moz-animation-duration: 0.0.2s; animation-duration: 0.0.2s;">
                 <div class="feature-box common-card bg-feature">
                     <div class="feature-icon bg-white">
-                        <div><img src="<?= base_url('assets/'); ?>landing-img/21.svg" alt="feature-icon"></div>
+                        <div><img src="<?= base_url('assets/'); ?>landing-img/31.svg" alt="feature-icon" class="svg-h"></div>
                     </div>
                     <h5>Instant Wallet Withdrawals</h5>
                     <p class="mb-0">All earnings are transferred directly to your wallet without any delay or approval.
@@ -222,7 +228,7 @@
                 style="visibility: visible;-webkit-animation-duration: 0.3s; -moz-animation-duration: 0.3s; animation-duration: 0.3s;">
                 <div class="feature-box common-card bg-feature">
                     <div class="feature-icon bg-white">
-                        <div><img src="<?= base_url('assets/'); ?>landing-img/31.svg" alt="feature-icon"></div>
+                        <div><img src="<?= base_url('assets/'); ?>landing-img/41.svg" alt="feature-icon" class="svg-h"></div>
                     </div>
                     <h5>Global Team Building</h5>
                     <p class="mb-0">Build your network from anywhere in the world with no geographic limits.</p>
@@ -232,7 +238,7 @@
                 style="visibility: visible;-webkit-animation-duration: 0.4s; -moz-animation-duration: 0.4s; animation-duration: 0.4s;">
                 <div class="feature-box common-card bg-feature">
                     <div class="feature-icon bg-white">
-                        <div><img src="<?= base_url('assets/'); ?>landing-img/41.svg" alt="feature-icon"></div>
+                        <div><img src="<?= base_url('assets/'); ?>landing-img/51.svg" alt="feature-icon" class="svg-h"></div>
                     </div>
                     <h5>Transparent & Secure System</h5>
                     <p class="mb-0">All transactions are visible on the blockchain, ensuring trust and security.</p>
@@ -242,7 +248,7 @@
                 style="visibility: visible;-webkit-animation-duration: 0.5s; -moz-animation-duration: 0.5s; animation-duration: 0.5s;">
                 <div class="feature-box common-card bg-feature">
                     <div class="feature-icon bg-white">
-                        <div><img src="<?= base_url('assets/'); ?>landing-img/51.svg" alt="feature-icon"></div>
+                        <div><img src="<?= base_url('assets/'); ?>landing-img/61.svg" alt="feature-icon" class="svg-h"></div>
                     </div>
                     <h5>Fast Registration</h5>
                     <p class="mb-0">Join within seconds using your wallet – no paperwork, no delays.</p>
@@ -252,7 +258,7 @@
                 style="visibility: visible;-webkit-animation-duration: 0.6s; -moz-animation-duration: 0.6s; animation-duration: 0.6s;">
                 <div class="feature-box common-card bg-feature">
                     <div class="feature-icon bg-white">
-                        <div><img src="<?= base_url('assets/'); ?>landing-img/61.svg" alt="feature-icon"></div>
+                        <div><img src="<?= base_url('assets/'); ?>landing-img/71.svg" class="svg-h" alt="feature-icon"></div>
                     </div>
                     <h5>Referral Tracking</h5>
                     <p class="mb-0"> Real-time tracking of your direct and team referrals with detailed stats.</p>
@@ -263,7 +269,7 @@
                 <div class="feature-box common-card bg-feature
                     ">
                     <div class="feature-icon bg-white">
-                        <div><img src="<?= base_url('assets/'); ?>landing-img/71.svg" alt="feature-icon"></div>
+                        <div><img src="<?= base_url('assets/'); ?>landing-img/81.svg" alt="feature-icon" class="svg-h"></div>
                     </div>
                     <h5>Mobile Friendly</h5>
                     <p class="mb-0">Access your dashboard and earnings on any device, anytime.</p>
@@ -273,7 +279,7 @@
                 style="visibility: visible;-webkit-animation-duration: 8s; -moz-animation-duration: 8s; animation-duration: 8s;">
                 <div class="feature-box common-card bg-feature">
                     <div class="feature-icon bg-white">
-                        <div><img src="<?= base_url('assets/'); ?>landing-img/81.svg" alt="feature-icon"></div>
+                        <div><img src="<?= base_url('assets/'); ?>landing-img/91.svg" alt="feature-icon" class="svg-h"></div>
                     </div>
                     <h5>Real-Time Reports</h5>
                     <p class="mb-0">View earnings, team structure, and transactions live on your dashboard.</p>

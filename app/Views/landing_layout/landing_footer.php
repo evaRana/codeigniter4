@@ -10,31 +10,33 @@
 
                 <div>
 
-                    <h2>The Admiro Bootstrap admin theme trusted by many developers world wide.</h2>
+                    <h2>The powerful MLM platform trusted by leaders and teams worldwide.</h2>
 
                     <div class="footer-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                             class="fa-regular fa-star"></i></div>
-                </div><a class="btn btn-primary footer-btn" href="https://themeforest.net/user/pixelstrap/portfolio"
-                    target="_blank">Buy Now</a>
+                </div>
+                <a class="btn btn-primary footer-btn" href="<?= base_url() ?>">
+                    Join Now
+                </a>
             </div>
         </div>
         <div class="sub-footer row g-md-2 g-3">
             <div class="col-md-6">
                 <div class="left-subfooter"><img class="img-fluid"
-                        src="<?= base_url('assets/'); ?>landing-img/footer.png" alt="logo">
-                    <p class="mb-0">Copyright 2024 � Admiro theme by pixelstrap</p>
+                        src="<?= base_url(LOGO) ?>" alt="logo">
+                    <p class="mb-0">© 2024 <?= TITLE ?> - Empowering your network marketing journey</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="right-subfooter">
                     <h3>If You Like Our Theme So Please Rate Us</h3>
                     <ul>
-                        <li><a href="https://support.pixelstrap.com/" target="_blank">Get Support</a></li>
-                        <li><a href="https://docs.pixelstrap.net/admin/admiro/document/"
-                                target="_blank">Documentation</a></li>
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe6hKUXw_By-pg7yabL0FxoTM02ZPTxoXy8PE3yboRuUCuyeA/viewform"
-                                target="_blank">Hire Us</a></li>
+                        <ul>
+                            <li><a href="#" target="_blank">Get Support</a></li>
+                            <li><a href="#" target="_blank">MLM Features</a></li>
+                            <li><a href="#" target="_blank">Contact Us</a></li>
+                        </ul>
                     </ul>
                 </div>
             </div>
