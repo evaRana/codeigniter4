@@ -1,0 +1,190 @@
+ERROR - 2025-08-18 10:44:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'codeigniter4', 3306, '', 0)
+#1 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\codeigniterfour\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\codeigniterfour\app\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\codeigniterfour\app\Controllers\Api\User.php(21): App\Models\Api\User_model->get_records('tbl_users', Array, '*')
+#6 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(933): App\Controllers\Api\User->index()
+#7 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#8 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\codeigniterfour\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\codeigniterfour\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\codeigniterfour\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\codeigniterfour\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\codeigniterfour\app\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\codeigniterfour\app\Controllers\Api\User.php(21): App\Models\Api\User_model->get_records('tbl_users', Array, '*')
+#5 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(933): App\Controllers\Api\User->index()
+#6 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#7 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniterfour\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniterfour\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\codeigniterfour\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-08-18 10:44:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: api/user]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_users`', [], false)
+ 3 APPPATH\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\User.php(21): App\Models\Api\User_model->get_records('tbl_users', [], '*')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-18 10:47:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'codeigniter4', 3306, '', 0)
+#1 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\codeigniterfour\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\codeigniterfour\app\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\codeigniterfour\app\Controllers\Api\User.php(20): App\Models\Api\User_model->get_records('tbl_users', Array, '*')
+#6 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(933): App\Controllers\Api\User->index()
+#7 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#8 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\codeigniterfour\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\codeigniterfour\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\codeigniterfour\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\codeigniterfour\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\codeigniterfour\app\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\codeigniterfour\app\Controllers\Api\User.php(20): App\Models\Api\User_model->get_records('tbl_users', Array, '*')
+#5 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(933): App\Controllers\Api\User->index()
+#6 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#7 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniterfour\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniterfour\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\codeigniterfour\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-08-18 10:47:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: api/user]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_users`', [], false)
+ 3 APPPATH\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\User.php(20): App\Models\Api\User_model->get_records('tbl_users', [], '*')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-18 10:47:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'codeigniter4', 3306, '', 0)
+#1 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\codeigniterfour\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\codeigniterfour\app\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\codeigniterfour\app\Controllers\Api\User.php(20): App\Models\Api\User_model->get_records('tbl_users', Array, '*')
+#6 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(933): App\Controllers\Api\User->index()
+#7 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#8 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\codeigniterfour\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\codeigniterfour\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\codeigniterfour\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\codeigniterfour\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\codeigniterfour\app\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\codeigniterfour\app\Controllers\Api\User.php(20): App\Models\Api\User_model->get_records('tbl_users', Array, '*')
+#5 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(933): App\Controllers\Api\User->index()
+#6 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#7 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniterfour\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniterfour\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\codeigniterfour\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-08-18 10:47:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: api/user]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_users`', [], false)
+ 3 APPPATH\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\User.php(20): App\Models\Api\User_model->get_records('tbl_users', [], '*')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-18 10:49:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'codeigniter4', 3306, '', 0)
+#1 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\codeigniterfour\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\codeigniterfour\app\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\codeigniterfour\app\Controllers\Api\User.php(28): App\Models\Api\User_model->get_records('tbl_users', Array, '*')
+#6 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(933): App\Controllers\Api\User->index()
+#7 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#8 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\codeigniterfour\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\codeigniterfour\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\codeigniterfour\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\codeigniterfour\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\codeigniterfour\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\codeigniterfour\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\codeigniterfour\app\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\codeigniterfour\app\Controllers\Api\User.php(28): App\Models\Api\User_model->get_records('tbl_users', Array, '*')
+#5 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(933): App\Controllers\Api\User->index()
+#6 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#7 D:\xampp\htdocs\codeigniterfour\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniterfour\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniterfour\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\codeigniterfour\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-08-18 10:49:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: api/user]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_users`', [], false)
+ 3 APPPATH\Models\Api\User_model.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\User.php(28): App\Models\Api\User_model->get_records('tbl_users', [], '*')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-18 10:55:19 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: api/user]
+in APPPATH\Controllers\Api\User.php on line 32.
+ 1 APPPATH\Controllers\Api\User.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\xampp\\htdocs\\codeigniterfour\\app\\Controllers\\Api\\User.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

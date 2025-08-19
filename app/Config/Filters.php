@@ -34,6 +34,11 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'jwt' => \App\Filters\JwtAuthFilter::class,
+        // 'csrf'     => \CodeIgniter\Filters\CSRF::class,
+        // 'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
+        // 'honeypot' => \CodeIgniter\Filters\Honeypot::class,
+        'auth'     => \App\Filters\AuthFilter::class,
     ];
 
     /**

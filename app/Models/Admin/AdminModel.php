@@ -6,61 +6,37 @@ use CodeIgniter\Model;
 
 class AdminModel extends Model
 {
-    protected $table; // Will be set dynamically
-    protected $primaryKey = 'id';
-    protected $returnType = 'array';
-    protected $allowedFields = [];
+   protected $db;
 
-    public function setTableName($table)
+    public function __construct()
     {
-        $this->table = $table;
-
-        // Optional: fetch allowed fields dynamically
-        $this->allowedFields = $this->db->getFieldNames($table);
-
-        return $this;
+        parent::__construct();
+        $this->db = \Config\Database::connect();
     }
 
-    public function get_records($where = [], $select = '*', $limit = null, $orderBy = null)
+    // fetch single record
+    public function get_single_record(string $table, array $where = [], string $select = '*')
     {
-        $builder = $this->db->table($this->table)->select($select);
+        $builder = $this->db->table($table);
+        $builder->select($select);
 
         if (!empty($where)) {
             $builder->where($where);
         }
 
-        if (!empty($orderBy)) {
-            $builder->orderBy(...$orderBy);
-        }
+        return $builder->get()->getRowArray();
+    }
 
-        if (!empty($limit)) {
-            $builder->limit($limit);
+    // fetch multiple records
+    public function get_records(string $table, array $where = [], string $select = '*')
+    {
+        $builder = $this->db->table($table);
+        $builder->select($select);
+
+        if (!empty($where)) {
+            $builder->where($where);
         }
 
         return $builder->get()->getResultArray();
-    }
-
-    public function get_single_record($where = [], $select = '*')
-    {
-        return $this->db->table($this->table)
-            ->select($select)
-            ->where($where)
-            ->get()
-            ->getRowArray();
-    }
-
-    public function insert_data($data)
-    {
-        return $this->db->table($this->table)->insert($data);
-    }
-
-    public function update_data($where, $data)
-    {
-        return $this->db->table($this->table)->where($where)->update($data);
-    }
-
-    public function delete_data($where)
-    {
-        return $this->db->table($this->table)->where($where)->delete();
     }
 }

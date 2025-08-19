@@ -309,7 +309,7 @@
                             <li class="d-flex">
                                 <svg class="svg-color">
                                     <use href="<?= base_url('assets/'); ?>images/iconly-sprite.svg#Login"></use>
-                                </svg><a class="ms-2" href="#">Log Out</a>
+                                </svg><a class="ms-2" href="<?= base_url('admin/logout') ?>">Log Out</a>
                             </li>
                         </ul>
                     </div>
